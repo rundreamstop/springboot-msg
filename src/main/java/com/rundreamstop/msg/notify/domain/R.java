@@ -1,4 +1,4 @@
-package com.rundreamstop.minio.file.domain;
+package com.rundreamstop.msg.notify.domain;
 
 
 import java.io.Serializable;

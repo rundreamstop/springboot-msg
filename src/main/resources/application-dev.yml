@@ -1,6 +1,5 @@
-# Minio配置
-minio:
-  url: http://10.12.3.131:9000
-  accessKey: oiVu9azSuv79y5WUwfQO
-  secretKey: 1TuuJOanJ7WaYq4pUUPeZ3SIciT3CgQq
-  bucketName: rundremas-test
+# 公共配置
+config:
+  dingtalk:
+    secret: SECe1a978f33f20ec1e91091a91ff52a3d2da0bb1afb48ef69d183ec9de7d35681f
+    webhook: https://oapi.dingtalk.com/robot/send?access_token=20347ef4a6b6a8086227f5c36c09d62d452f787674be17cc6caa062d2d76e8ea

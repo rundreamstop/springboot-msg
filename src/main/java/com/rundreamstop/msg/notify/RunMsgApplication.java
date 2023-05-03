@@ -1,4 +1,4 @@
-package com.rundreamstop.minio.file;
+package com.rundreamstop.msg.notify;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.SpringApplication;
@@ -10,17 +10,16 @@ import org.springframework.core.env.Environment;
 import java.net.InetAddress;
 
 /**
- * 文件服务
  *
  * @author zhangzihaopk@gmail.com
  */
 @Slf4j
 @SpringBootApplication(exclude = {DataSourceAutoConfiguration.class})
-public class RunMinioFileApplication {
+public class RunMsgApplication {
     public static void main(String[] args) {
         try {
             System.setProperty("spring.devtools.restart.enabled", "false");
-            ConfigurableApplicationContext ctx = SpringApplication.run(RunMinioFileApplication.class, args);
+            ConfigurableApplicationContext ctx = SpringApplication.run(RunMsgApplication.class, args);
             String host = InetAddress.getLocalHost().getHostAddress();
             Environment environment = ctx.getBean(Environment.class);
             String port = environment.getProperty("local.server.port");
